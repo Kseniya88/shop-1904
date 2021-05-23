@@ -1,0 +1,49 @@
+.offers {
+    &__list {
+        @include flex-wrap-justyfy-content();
+    } 
+    &__item {
+        width: 31%;
+        min-height: 260px;
+        background-color: $grey;
+        margin: 0 0 30px;
+        background-size: cover;
+        @include flex-center();
+        @include tablet {
+            width: 31%;
+            min-height: 166px;
+        }
+        @include mobile {
+            width: 100%;
+            min-height: 248px;
+        }
+
+        &--woman {
+            background-image: url(../img/woman.jpg);
+        }
+        &--man {
+            background-image: url(../img/man-2.jpg);
+        }
+        
+        &--kids {
+            background-image: url(../img/child.jpg);
+        }
+        
+        &--accesories {
+            background-image: url(../img/accessories.jpg);
+            width: 100%;
+            margin: 0;
+            min-height: 180px;
+
+            @include tablet {
+                min-height: 116px;
+            }
+
+            @include mobile {
+                min-height: 111px;
+            }
+        }
+    }
+}
+
+
